@@ -21,7 +21,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
-  if songs.include?(user_input) || user_input <= songs.length
+  if songs.include?(user_input) #|| user_input <= songs.length
     songs.each do |song|
       if song == user_input
         puts "Playing #{song}"
