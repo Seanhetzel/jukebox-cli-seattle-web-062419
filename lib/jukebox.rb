@@ -25,8 +25,8 @@ def play(songs)
     song.split(".")
     if song[0] == user_input || song[1] == user_input
       puts "Playing #{song}"
-    else
-      puts "Invalid input, please try again"
+    #else
+    #  puts "Invalid input, please try again"
     end
   end
 end
