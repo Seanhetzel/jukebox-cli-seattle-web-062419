@@ -24,7 +24,7 @@ def play(songs)
   songs.each do |song|
     song.split(".")
     if song[0] == user_input || song[1] == user_input
-    puts "Playing #{song_name}"
+      puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
   end
