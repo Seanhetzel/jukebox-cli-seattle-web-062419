@@ -28,7 +28,7 @@ def play(songs)
     songs.each do |song|
       if song == user_input
         puts "Playing #{song}"
-  elsif user_input
+  #elsif user_input
 
       end
     end
