@@ -19,7 +19,7 @@ def help
 end
 
 def play(songs)
-  binding.pry
+  
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   puts "Playing #{songs[user_input - 1]}"
