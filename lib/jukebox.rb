@@ -27,7 +27,7 @@ def play(songs)
   if songs.include?(user_input) || user_input.to_i <= songs.length
     puts "Playing #{songs.at_index(user_input)}"
     songs.each do |song|
-      if song == user_input ||
+      if song == user_input
         puts "Playing #{song}"
       #else
       #  puts "Invalid input, please try again"
