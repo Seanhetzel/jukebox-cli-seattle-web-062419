@@ -9,7 +9,7 @@ songs = [
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
-require 'pry'
+require "pry"
 def help
   puts "  I accept the following commands:"
   puts "- help : displays this help message"
@@ -19,7 +19,7 @@ def help
 end
 
 def play(songs)
-  
+
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   puts "Playing #{songs[user_input - 1]}"
