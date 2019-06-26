@@ -24,8 +24,7 @@ def play(songs)
   user_input = gets.chomp
 #  puts "Playing #{songs[user_input.to_i - 1]}"
 
-  if suer_input.is_a(string) && songs.include?(user_input)
-    puts "Playing #{songs.at_index(user_input)}"
+  if user_input.is_a(string) && songs.include?(user_input)
     songs.each do |song|
       if song == user_input
         puts "Playing #{song}"
