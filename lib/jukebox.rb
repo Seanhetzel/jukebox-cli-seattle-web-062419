@@ -24,19 +24,19 @@ def play(songs)
   user_input = gets.chomp
 #  puts "Playing #{songs[user_input.to_i - 1]}"
 
-#  if songs.include?(user_input) #|| user_input <= songs.length
-#    puts "Playing #{songs.at_index(user_input)}"
-#    songs.each do |song|
-#      if song == user_input ||
-#        puts "Playing #{song}"
+  if songs.include?(user_input) #|| user_input <= songs.length
+    puts "Playing #{songs.at_index(user_input)}"
+    songs.each do |song|
+      if song == user_input ||
+        puts "Playing #{song}"
       #else
       #  puts "Invalid input, please try again"
-#      end
-#    end
-#  else
-#    puts "Invalid input, please try again"
-#  end
-#end
+      end
+    end
+  else
+    puts "Invalid input, please try again"
+  end
+end
 
 def list(songs)
   songs.each_with_index {|song, index| puts "#{index + 1}. #{song}"}
